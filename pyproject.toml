@@ -17,6 +17,9 @@ dependencies = ["webvtt-py>=0.5"]
 [project.optional-dependencies]
 dev = ["pytest>=8"]
 
+[project.scripts]
+videosearch = "videosearch.cli:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

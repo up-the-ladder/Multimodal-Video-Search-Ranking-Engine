@@ -1,0 +1,39 @@
+WEBVTT
+
+NOTE Synthetic transcript written by hand as a demo. It does not come from a real video.
+
+00:00:00.000 --> 00:00:06.000
+Today we are going to look at how a convolution
+actually works on an image.
+
+00:00:06.000 --> 00:00:14.000
+A kernel is a small grid of numbers, often three by three,
+that slides across the picture one position at a time.
+
+00:00:14.000 --> 00:00:22.000
+At every position we multiply the kernel against the pixels
+underneath it and add the results into a single number.
+
+00:00:22.000 --> 00:00:29.500
+That number becomes one pixel of the output, which we call
+a feature map.
+
+00:00:31.000 --> 00:00:39.000
+Different kernels pick out different things. One might respond
+to horizontal edges, another to vertical ones.
+
+00:00:39.000 --> 00:00:47.000
+Stride controls how far the kernel jumps between positions,
+so a larger stride gives you a smaller output.
+
+00:00:47.000 --> 00:00:55.000
+Padding adds a border of zeros so the kernel can sit on the
+corners without running off the edge of the image.
+
+00:01:02.000 --> 00:01:10.000
+Pooling then shrinks the feature map by keeping only the
+strongest response in each little neighbourhood.
+
+00:01:10.000 --> 00:01:18.000
+Stacking these operations is what lets a network go from raw
+pixels to shapes and eventually to objects.
