@@ -1,0 +1,21 @@
+WEBVTT
+
+NOTE Hand-written fixture for tests. The 28s to 36s cue deliberately
+crosses the 30 second mark.
+
+intro
+00:00:00.000 --> 00:00:04.000
+Welcome to this short lesson
+on image filters.
+
+00:00:05.000 --> 00:00:12.500 align:start position:10%
+<v Instructor>A convolution kernel slides across the image.</v>
+
+00:00:13.000 --> 00:00:14.000
+<i> </i>
+
+00:28.000 --> 00:36.000
+Edges &amp; corners show up where pixel values jump.
+
+00:00:41.000 --> 00:00:45.000
+Pooling then shrinks the feature map.

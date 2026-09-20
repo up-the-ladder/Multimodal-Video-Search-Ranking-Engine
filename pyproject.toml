@@ -12,7 +12,7 @@ requires-python = ">=3.12"
 
 # Runtime dependencies get added alongside the code that needs them,
 # so this list stays honest about what the package actually uses.
-dependencies = []
+dependencies = ["webvtt-py>=0.5"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
