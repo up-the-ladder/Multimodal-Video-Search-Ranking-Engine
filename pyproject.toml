@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "videosearch"
+version = "0.1.0"
+description = "Search inside videos and return the timestamped segments that match a query."
+license = { file = "LICENSE" }
+authors = [{ name = "Kanishka Singh" }]
+requires-python = ">=3.12"
+
+# Runtime dependencies get added alongside the code that needs them,
+# so this list stays honest about what the package actually uses.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
