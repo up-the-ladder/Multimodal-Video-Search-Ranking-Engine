@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "videosearch"
 version = "0.1.0"
 description = "Search inside videos and return the timestamped segments that match a query."
+readme = "README.md"
 license = { file = "LICENSE" }
 authors = [{ name = "Kanishka Singh" }]
 requires-python = ">=3.12"
